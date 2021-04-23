@@ -1,18 +1,21 @@
-from array import *
+class student:
+    def __init__(self,name,roll,class_room):
+        self.name=name
+        self.roll=roll
+        self.class_room=class_room
 
-arr1=array("i",[])
+    def math_marks(self,mark):
+        self.marks=mark
+        return self.marks
+    def comparing_marks(self,other):
+        if self.math_marks>other.math_marks:
+            print(self.name,"wins")
+        else:
+            print(other.name,"wins")
 
-n=int(input("enter the length of array : "))
+s1=student("ram",51,"4th")
+s2=student("vinay",50,"4th")
+print(s1.name,s2.name)
+print(s1.math_marks(54))
+print(s2.math_marks(58))
 
-for i in range(n):
-  k=int(input("enter the value of array : "))
-  arr1.append(k)
-print(arr1)
-
-num_search=int(input("enter the search value : "))
-
-a=0
-for i in arr1:
-  if num_search==i:
-    print(a)
-  a+=1

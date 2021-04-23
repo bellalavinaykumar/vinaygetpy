@@ -35,4 +35,15 @@ def user_input():
 def printing_prime_numbers():
     pass
 def arrays():
+    "numpay"
+    "user inpur "
+def conditions():
+    "if"
+    "else"
+def loops():
+    "for loop"
+    "while"
+def printing_patterns():
+    "*"
+
 

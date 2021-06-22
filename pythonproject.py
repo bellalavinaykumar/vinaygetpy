@@ -1,16 +1,24 @@
-#loops
-#while loop
-#for loop
-#nested loops
 
-def while_loop(n,n1):
-    i=n
-    while i>=1:
-        print("nested ",end="")
-        j=n1
-        while j>=1:
-            print("loop",end=" ")
-            j-=1
-        print()
-        i-=1
-while_loop(4,1)
+def printing_prime(k):
+    for i in range(2,k):
+        if k%i==0:
+            print("not prime")
+            break
+    else:
+        print("prime")
+
+prime=[]
+not_prime=[]
+n=int(input("enter the num : "))
+for i in range(1,n+1):
+    if i==1:
+        not_prime.append(i)
+        continue
+    for j in range(2,i):
+        if i%j==0:
+            not_prime.append(i)
+            break
+    else:
+        prime.append(i)
+print(prime)
+print(not_prime)

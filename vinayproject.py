@@ -1,49 +1,14 @@
-def data_types():
-    "none"
-    "numaric"
-    "string"
-    "range"
-    "list"
-    "tuples"
-    "set"
-    "map"
-
-def operators():
-    "arthematic"
-    "assigment"
-    "locical"
-    "urinary"
-    "relationl"
-
-def number_system_conversation():
-    "decimal"
-    "binary"
-    "hexa decimal"
-    "octa decimal"
-
-def bitwise_operator():
-    "complimentary"
-    "or"
-    "and"
-    "xor"
-    "lift shift"
-    "right shift"
-def user_input():
-    "eval"
-    "argv comand input"
-
-def printing_prime_numbers():
-    pass
-def arrays():
-    "numpay"
-    "user inpur "
-def conditions():
-    "if"
-    "else"
-def loops():
-    "for loop"
-    "while"
-def printing_patterns():
-    "*"
-
-
+def Fibonacci(n):
+    if n==1 or n==0:
+        print(0)
+    else:
+        a=0
+        b=1
+        print(a)
+        print(b)
+        for i in range(2,n):
+            c=a+b
+            a=b
+            b=c
+            print(c)
+Fibonacci(4)

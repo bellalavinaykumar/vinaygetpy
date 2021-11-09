@@ -1,11 +1,4 @@
-def div(a,b):
-   print(a/b)
-
-def smart_div(func):
-   def inner(a,b):
-      if a<b:
-         a,b=b,a
-         return func
-      return inner
-
-div1=smart_div(div(6,2))
+list=[5,-5,8,6,7]
+print(min(list))
+k=list[1]+list[2]
+print(k)

@@ -1,2 +1,2 @@
-val=input("enter the String value ")
-print(val[::-1])
+from pywhatkit import *
+
